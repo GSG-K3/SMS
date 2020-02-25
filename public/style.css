@@ -68,8 +68,53 @@
 }
 
 .icons img {
-    width: 200px;
-    height: 200px;
-    margin-top: 36px;
-    box-shadow: 30px 10px 10px 10px #aaaaaa;
+  width: 200px;
+  height: 200px;
+  margin-top: 36px;
+  box-shadow: 30px 10px 10px 10px #aaaaaa;
 }
+.searchForm {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 56px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.searchForm input {
+  height: 25px;
+  border: 1px solid grey;
+  width: 46vw;
+  background: #f1f1f1;
+}
+.searchForm button {
+  width: 76px;
+  height: 26px;
+  background-color: #4e9cc9;
+  color: beige;
+  font-size: 3vw;
+}
+
+.gradesTable {
+  margin-left: 51px;
+  padding-top: 20px;
+}
+.gradesTable_std td,
+.gradesTable_std th {
+  border: 1px solid #ddd;
+  padding: 21px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.gradesTable_std th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4e9cc9;
+  color: white;
+  font-size: 25px;
+}
+
