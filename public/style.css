@@ -1,0 +1,31 @@
+.student_profolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 22px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.student_img {
+    border-radius: 35%;
+    width: 130px;
+    height: 130px;
+    padding: 15px 5px 15px 5px;
+}
+
+.student_profolio_name {
+    padding: 40px 0 0 0;
+}
+
+.student_form {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 35px 10px 20px;
+    justify-content: space-around;
+}
+
+.student_info {
+    padding-left: 22px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    height: 320px;
+}
