@@ -1,20 +1,20 @@
 .student_profolio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    padding-left: 22px;
+    padding-left: 100px;
     box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .student_img {
-    border-radius: 35%;
+    border-radius: 50%;
     width: 130px;
     height: 130px;
-    padding: 15px 5px 15px 5px;
+    padding: 10px;
 }
 
 .student_profolio_name {
-    padding: 40px 0 0 0;
+    padding: 10px 0 10px 0;
 }
 
 .student_form {
@@ -25,7 +25,51 @@
 }
 
 .student_info {
-    padding-left: 22px;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px #aaaaaa;
     height: 320px;
+    /* background-color: oldlace */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.topsection {
+    background-color: #4e9cc9;
+    width: 100%;
+    height: 109px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topsection img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.topsection h1 {
+    margin-top: 22px;
+    font-family: "Anton";
+    font-size: 6vw;
+    color: white;
+}
+
+.icons {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons img {
+    width: 200px;
+    height: 200px;
+    margin-top: 36px;
+    box-shadow: 30px 10px 10px 10px #aaaaaa;
 }
