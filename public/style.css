@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.topsection {
+  background-color: #4e9cc9;
+  width: 100%;
+  height: 109px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topsection img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.topsection h1 {
+  margin-top: 22px;
+  font-family: "Anton";
+  font-size: 6vw;
+  color: white;
+}
+
+.icons {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons img {
+  width: 200px;
+  height: 200px;
+  margin-top: 36px;
+  box-shadow: 30px 10px 10px 10px #aaaaaa;
+}
