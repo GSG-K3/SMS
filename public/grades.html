@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Student Managment System</title>
   </head>
   <body>
@@ -15,7 +20,31 @@
       <img src="./imges/school.png" alt="school picture" />
       <h1>Student Managment System</h1>
     </section>
-    <section class="gradesTable"></section>
+
+    <form class="searchForm" action="page.php">
+      <input type="text" placeholder="Search.." name="search" />
+      <button type="submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
+
+    <section class="gradesTable">
+      <table class="gradesTable_std">
+        <tr>
+          <th>Course</th>
+          <th>
+            Grades
+          </th>
+        </tr>
+        <tr>
+          <td>
+            90
+          </td>
+          <td>80</td>
+        </tr>
+      </table>
+    </section>
+
     <script src="dom.js"></script>
   </body>
 </html>
