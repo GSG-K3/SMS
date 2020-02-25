@@ -19,19 +19,19 @@ As a user , when click on grades image display the grades of students.<br>
 
 
 # File Structure:
-    public<br>
+    public
 
 index.html<br>
 dom.js<br>
 style.css<br>
 
-    src<br>
+    src
 
 server.js<br>
 router.js<br>
 handler.js<br>
 
-    database<br>
+    database
 db_bulid.js<br>
 db_build.sql<br>
 db_connection.js<br>
@@ -40,11 +40,11 @@ db_connection.js<br>
 getData.js<br>
 postData.js<br>
 
-    config.env<br>
+    config.env
 
-    .gitignore<br>
+    .gitignore
 
-     readme.md<br>
+     readme.md
 
 
 # Team
