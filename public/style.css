@@ -1,3 +1,36 @@
+.student_profolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 100px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.student_img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+}
+
+.student_profolio_name {
+  padding: 10px 0 10px 0;
+}
+
+.student_form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 35px 10px 20px;
+  justify-content: space-around;
+}
+
+.student_info {
+  padding: 40px;
+  box-shadow: 5px 5px 5px 5px #aaaaaa;
+  height: 320px;
+  /* background-color: oldlace */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -51,10 +84,10 @@
 }
 
 .searchForm input {
-  height: 25px;
-  border: 1px solid grey;
+  height: 28px;
   width: 46vw;
   background: #f1f1f1;
+  border: none;
 }
 .searchForm button {
   width: 76px;
@@ -62,6 +95,7 @@
   background-color: #4e9cc9;
   color: beige;
   font-size: 3vw;
+  border: none;
 }
 
 .gradesTable {
