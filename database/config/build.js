@@ -1,18 +1,19 @@
-const fs = require("fs");
-const path = require("path");
-
-const dbConnection = require("./connection.js");
-
-
-const dbBuild = () => {
-    const sqlPath = readFileSync(join(__dirname, "build.sql")).toString();
-    return dbConnection.query(sql, (err, res) => {
-        if (err) throw new Error('error build.js');
-        else console.log('build sucsess');
-
+const fs = require('fs');
+const buildDatabase = () => {
+    const dbconnection = require('./connection.js');
+    const sql = fs.readFileSync(`${__dirname}/build.sql`).toString();
+    dbconnection.query(sql, (err, result) => {
+        if (err) {
+            console.log(err, "error");
+        } else {
+            console.log("database created");
+            dbconnection.end(() => {
+                console.log('connection closed')
+            })
+        }
     });
 };
 
+buildDatabase();
 
-
-module.exports = { dbBuild };
+module.exports = buildDatabase;
