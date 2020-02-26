@@ -2,7 +2,7 @@ const dbConnection = require("../config/connection")
 
 // students, teachers, grades, courses
 
-const sqlStudent = "select * students"
+const sqlStudent = "select * from students"
 const sqlGrades = "select * grades"
 const sqlCourses = "select * courses"
     // const sqlStudent = "select * students"
