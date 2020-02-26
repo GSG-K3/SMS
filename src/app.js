@@ -14,19 +14,28 @@ app.get("/home", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "index.html"))
 })
 
-app.get("/home/student", (request, response) => {
+app.get("/api/student", (request, response) => {
     getData.getdataStudent((err, res) => {
         if (err) console.log(err, "connection error")
         else response.send(res)
     });
 });
-// we don't know _______________________ll
-// app.get("/home/grades", (request, response) => {
-//     getData.getdataCourses((err, res) => {
-//         if (err) console.log(err, "connection error")
-//         else response.send(res)
-//     });
-// });
+app.get("/student", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "student.html"))
+})
+
+app.get("/api/grades", (request, response) => {
+    getData.getdataStudent((err, res) => {
+        if (err) console.log(err, "connection error")
+        else response.send(res)
+    });
+});
+
+
+app.get("/grades", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "grades.html"))
+})
+
 
 app.listen(app.get("port"), () => {
     console.log("The server is working ....");

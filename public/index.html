@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
     <title>Student Managment System</title>
 </head>
@@ -16,10 +16,11 @@
         <h1>Student Managment System</h1>
     </section>
     <section class="icons">
-        <a href="#student"><img src="./imges/student.png" alt="student picture" /></a>
-        <a href="#student"><img src="./imges/grades.png" alt="grades picture" /></a>
+        <a id='student_pic' href="/student" target="_self"><img src="./imges/student.png" alt="student picture" /></a>
+        <a id='grades_pic' href="/grades"><img src="./imges/grades.png" alt="grades picture" /></a>
     </section>
-    <script src="dom.js"></script>
+    <script src="/js/xhr.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
