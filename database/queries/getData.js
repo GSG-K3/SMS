@@ -6,9 +6,11 @@ const sqlStudent = "select * from students"
 const sqlGrades = "select * grades"
 const sqlCourses = "select * courses"
     // const sqlStudent = "select * students"
+    //'select * from sudent where student_id =1'
 
-const getdataStudent = callback => {
-    dbConnection.query(sqlStudent, (err, res) => {
+
+const getdataStudent = (stdid, callback) => {
+    dbConnection.query(`select * from students where student_id =${stdid}`, (err, res) => {
         if (err) console.log(err);
         else {
             // console.log(rows);

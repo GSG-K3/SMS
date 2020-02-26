@@ -14,8 +14,9 @@ app.get("/home", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "index.html"))
 })
 
-app.get("/api/student", (request, response) => {
-    getData.getdataStudent((err, res) => {
+app.get("/api/student/:id", (request, response) => {
+    let stdid = request.params.id;
+    getData.getdataStudent(stdid, (err, res) => {
         if (err) console.log(err, "connection error")
         else response.send(res)
     });
