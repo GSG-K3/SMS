@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS students, teachers, grades, courses;
 
 
 CREATE TABLE IF NOT EXISTS courses(
-    course_id SERIAL     PRIMARY KEY,
+    course_id SERIAL   PRIMARY KEY,
     course_title TEXT  NOT NULL
 
 );
@@ -20,11 +20,11 @@ INSERT INTO courses (course_id, course_title) VALUES(7,'English');
 CREATE TABLE IF NOT EXISTS students(
   student_id  SERIAL     PRIMARY KEY,
   student_name TEXT  NOT NULL , 
-  student_birth INTEGER ,
+  student_birth INTEGER  NOT NULL,
   student_sex  TEXT NOT NULL,
-  student_address TEXT , 
+  student_address TEXT NOT NULL , 
   student_EMAIL VARCHAR(320), 
-  student_img VARCHAR(250) NoT NULL
+  student_img VARCHAR(250) NOT NULL
 
 );
 
