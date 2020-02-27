@@ -6,6 +6,8 @@ DROP TABLE IF EXISTS  relations ,students, teachers, grades, courses CASCADE;
 CREATE TABLE courses(
     course_id SERIAL PRIMARY KEY,
     course_title TEXT  NOT NULL
+    
+    
 
 );
 

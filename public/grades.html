@@ -17,29 +17,15 @@
         <h1>Student Managment System</h1>
     </section>
 
-    <form class="searchForm" action="page.php">
-        <input type="text" placeholder="Your ID Number.." name="search" />
-        <button type="submit">
+    <div class="searchForm">
+        <input type="text" placeholder="Your ID Number.." id='inputText' name="search" />
+        <button id='btn' type="submit">
         <i class="fa fa-search" aria-hidden="true"></i>
       </button>
-    </form>
+    </div>
 
-    <section class="gradesTable">
-        <table class="gradesTable_std">
-            <tr>
-                <th>Course</th>
-                <th>
-                    Grades
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    Math
-                </td>
-                <td>80</td>
-            </tr>
-        </table>
-    </section>
+    <div class="gradesTable">
+    </div>
 
     <script src="/js/xhr.js"></script>
     <script src="/js/grades.js"></script>
