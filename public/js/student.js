@@ -53,12 +53,12 @@ function createItems(item) {
     img.className = "student_img"
     img.alt = "student picture";
 
-    studentName.innerHTML = item.student_name;
-    studentID.innerHTML = item.student_id;
-    address.innerHTML = item.student_address;
-    birthday.innerHTML = item.student_birth;
-    sex.innerHTML = item.student_sex;
-    email.innerHTML = item.student_email;
+    studentID.innerHTML = "ID: " + item.student_id;
+    studentName.innerHTML = "Name: " + item.student_name;
+    address.innerHTML = "Address: " + item.student_address;
+    birthday.innerHTML = "Day of Birth: " + item.student_birth;
+    sex.innerHTML = "Gender : " + item.student_sex;
+    email.innerHTML = "Email :" + item.student_email;
 
     divFirst.className = "student_profolio";
     divSecond.className = "student_profolio_name";
@@ -67,8 +67,8 @@ function createItems(item) {
 
     divFirst.appendChild(img);
     divFirst.appendChild(divSecond);
-    divSecond.appendChild(studentName);
     divSecond.appendChild(studentID);
+    divSecond.appendChild(studentName);
     divFirst.appendChild(divThird);
 
     divThird.appendChild(address);
