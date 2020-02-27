@@ -2,12 +2,6 @@ const dbConnection = require("../config/connection")
 
 // students, teachers, grades, courses
 
-const sqlStudent = "select * from students"
-const sqlGrades = "select * grades"
-const sqlCourses = "select * courses"
-    // const sqlStudent = "select * students"
-    //'select * from sudent where student_id =1'
-
 
 const getdataStudent = (stdid, callback) => {
     dbConnection.query(`select * from students where student_id =${stdid}`, (err, res) => {
@@ -18,8 +12,8 @@ const getdataStudent = (stdid, callback) => {
         }
     });
 }
-const getdataGrades = callback => {
-    dbConnection.query(sqlGrades, (err, res) => {
+const getdataGrades = (stdid, callback)  => {
+    dbConnection.query(`SELECT grade_mark,course_title  FROM grades JOIN courses on courses.course_id = grades.course_id WHERE student_id =${stdid}`, (err, res) => {
         if (err) console.log(err);
         else {
             // console.log(rows);

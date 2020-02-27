@@ -1,10 +1,3 @@
-// let studentpic = document.getElementById('student_pic');
-// studentpic.addEventListener('click', getstudentdata);
-
-// window.addEventListener('load', () => {
-//     getstudentdata()
-// })
-
 
 
 let button = document.getElementById("btn")

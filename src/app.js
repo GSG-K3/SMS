@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static(path.join(__dirname, "..", "public")));
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 4001);
 
 app.get("/home", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "index.html"))
@@ -25,8 +25,9 @@ app.get("/student", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "student.html"))
 })
 
-app.get("/api/grades", (request, response) => {
-    getData.getdataStudent((err, res) => {
+app.get("/api/grades/:id", (request, response) => {
+    let stdid = request.params.id;
+    getData.getdataGrades(stdid, (err, res) => {
         if (err) console.log(err, "connection error")
         else response.send(res)
     });
